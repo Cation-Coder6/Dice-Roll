@@ -1,0 +1,33 @@
+.Die {
+  display: inline-block;
+  font-size: 10em;
+  padding: 20px;
+  color: purple;
+}
+.shaking {
+  animation-name: diceroll;
+  animation-duration: 1s;
+}
+@keyframes diceroll {
+  15% {
+    transform: rotate(-10deg) translateX(-40px);
+  }
+  30% {
+    transform: rotate(10deg) translate(40px);
+  }
+  45% {
+    transform: rotate(-5deg) translateX(-20px);
+  }
+  60% {
+    transform: rotate(5deg) translateX(20px);
+  }
+  75% {
+    transform: rotate(-2deg) translateX(-3px);
+  }
+  90% {
+    transform: rotate(2deg) translateX(3px);
+  }
+  100% {
+    transform: rotate(0) translateX(0);
+  }
+}
